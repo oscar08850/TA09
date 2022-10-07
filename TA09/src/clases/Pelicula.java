@@ -1,6 +1,9 @@
+package clases;
 
 public class Pelicula {
 	
+	
+	// Atributos //
 	private String titulo;
 	
 	private int duracion;
@@ -9,6 +12,7 @@ public class Pelicula {
 	
 	private String director;
 
+	// Constructor //
 	public Pelicula(String titulo, int duracion, int edadMinima, String director) {
 		this.titulo = titulo;
 		this.duracion = duracion;
@@ -16,6 +20,7 @@ public class Pelicula {
 		this.director = director;
 	}
 
+	// Getters y Setters //
 	public String getTitulo() {
 		return titulo;
 	}
