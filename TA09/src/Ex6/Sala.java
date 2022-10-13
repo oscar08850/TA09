@@ -26,28 +26,8 @@ public class Sala extends Cine {
 	}
 
 	// Getters y Setters //
-	public Pelicula getPelicula() {
-		return pelicula;
-	}
-
-	public void setPelicula(Pelicula pelicula) {
-		this.pelicula = pelicula;
-	}
-
 	public double getPrecio() {
 		return precio;
-	}
-
-	public void setPrecio(double precio) {
-		this.precio = precio;
-	}
-
-	public Espectador[][] getAsientos() {
-		return asientos;
-	}
-
-	public void setAsientos(Espectador[][] asientos) {
-		this.asientos = asientos;
 	}
 
 	// Funcion que asigna un asiento en un espectador comprobando si cualifica y si
