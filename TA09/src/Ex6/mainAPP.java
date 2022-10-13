@@ -1,6 +1,10 @@
+<<<<<<< HEAD:TA09/src/Ex6/mainAPP.java
+package Ex6;
+=======
 import clases.Pelicula;
 import clases.Sala;
 import clases.FuncionesAuxiliares;
+>>>>>>> main:TA09/src/mainAPP.java
 
 public class mainAPP {
 
