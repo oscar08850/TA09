@@ -1,8 +1,4 @@
-import clases.Cine;
-import clases.Espectador;
-import clases.Pelicula;
-import clases.Sala;
-import clases.FuncionesAuxiliares;
+package Ex6;
 
 public class mainAPP {
 

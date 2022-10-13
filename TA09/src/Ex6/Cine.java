@@ -1,4 +1,4 @@
-package clases;
+package Ex6;
 
 public abstract class Cine {
 
