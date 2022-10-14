@@ -10,7 +10,7 @@ public class Television extends Electrodomestico {
 	// constructor por defecto
 	public Television() {
 		super();
-		this.resolucion = RESOLUCION;
+		this.resolucion = RESOLUCION; 
 		this.sintonizadorTDT = SINTONIZADOR_TDT;
 	}
 

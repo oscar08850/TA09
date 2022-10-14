@@ -11,4 +11,4 @@ public enum ConsumoElectrico {
 	ConsumoElectrico(char consumo) {
 		this.consumo = consumo;
 	}
-}
+}  

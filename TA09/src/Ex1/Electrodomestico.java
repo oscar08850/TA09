@@ -12,9 +12,9 @@ public class Electrodomestico {
 
 	protected char consumoEnergetico;
 
-	protected double peso = 5;
+	protected double peso;
 	
-	
+	 
 	/// Variables por defecto ///
 	
 	private final double PRECIO_BASE = 100;

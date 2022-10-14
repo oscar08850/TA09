@@ -7,33 +7,33 @@ public class mainApp {
 
 	public static void main(String[] args) {
 
-		// ArrayList<Electrodomestico> ListaElectrodomesticos = new ArrayList<>();
 
+		FuncionesAuxiliares aux = new FuncionesAuxiliares();
 		Electrodomestico arrayElectrodomestico[] = new Electrodomestico[10];
 
 		
-		int precioTotalElectrodomesticos = 0;
-		int precioTotalLavadoras = 0;
-		int precioTotalTelevisores = 0;
-		Electrodomestico[] electrodomesticos = rellenarElectrodomesticos();
+		double precioTotalElectrodomesticos = 0;
+		double precioTotalLavadoras = 0; 
+		double precioTotalTelevisores = 0;
+		Electrodomestico[] electrodomesticos = aux.rellenarElectrodomesticos();
 
 		// sumamos el precio total separando según sea electrodoméstico general,
 		// televisor o lavadora
 		for (int i = 0; i < electrodomesticos.length; i++) {
 			if (electrodomesticos[i] instanceof Electrodomestico) {
-				precioTotalElectrodomesticos += electrodomesticos[i].precioFinal();
+				precioTotalElectrodomesticos = precioTotalElectrodomesticos + electrodomesticos[i].precioFinal();
 			}
 			if (electrodomesticos[i] instanceof Lavadora) {
-				precioTotalLavadoras += electrodomesticos[i].precioFinal();
+				precioTotalLavadoras = precioTotalLavadoras + electrodomesticos[i].precioFinal();
 			} else if (electrodomesticos[i] instanceof Television) {
-				precioTotalTelevisores += electrodomesticos[i].precioFinal();
+				precioTotalTelevisores = precioTotalTelevisores + electrodomesticos[i].precioFinal();
 			}
 
 		}
 
-		System.out.println("El precio de los electrodomésticos es: " + precioTotalElectrodomesticos + "euros");
-		System.out.println("El precio de las lavadoras es: " + precioTotalLavadoras + "euros");
-		System.out.println("El precio de los televisiones es: " + precioTotalTelevisores + "euros");
+		System.out.println("El precio de los electrodomésticos es: " + precioTotalElectrodomesticos + " euros");
+		System.out.println("El precio de las lavadoras es: " + precioTotalLavadoras + " euros");
+		System.out.println("El precio de los televisores es: " + precioTotalTelevisores + " euros");
 
 	}
 
